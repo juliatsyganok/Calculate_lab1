@@ -20,7 +20,6 @@ def get_tokens(case):
             tokens.append(case[i])
             i += 1
         elif case[i].isdigit() or case[i] == '.':
-            # Собираем число
             j = i
             while j < len(case) and (case[j].isdigit() or case[j] == '.'):
                 j += 1
